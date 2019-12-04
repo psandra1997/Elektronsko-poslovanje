@@ -11,13 +11,22 @@
     background-position: center center;
 }
 #navbar{
-    width: 80%;
+    width: em;
     font-style: italic;
     background: rgb(167, 223, 240);
     color: transparent;
+    top:0;
+    margin: 20px;
+    font-size: 30;
     
 }
+#container{
+    width: em;
+    background-color: navajowhite;
+
+}
 ul{
+    font-size-adjust: 60;
     width: 100%;
     margin: 0 auto;
     padding: 0;
@@ -26,12 +35,14 @@ ul li{
     list-style: none;
     display: inline-block;
     padding: 0;
+    float:top;
 }
 ul li a{
     text-decoration: none;
     color: rgb(44, 157, 172);
-    padding: 5px 20px;
+    padding: 20px 20px;
     border: 1px solid transparent;
+
 }
 ul li.aktivan a{
     background-color: white;
@@ -115,8 +126,10 @@ a.btn-thirtd{
     background-color: rgb(119, 190, 231);
 }
 #content{
-    display: flex;
-    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: auto auto  ;
+    grid-template-rows: auto auto auto auto ;
+   
 }
 #futer{
     display: flex;
@@ -125,8 +138,15 @@ a.btn-thirtd{
 
 .container-fluid{
     background-color: thistle;
-    width: 90%;
+    width: em;
+    text-align: center;
+    margin: 5px 5px;
 
+}
+#content1{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 2%;
 }
 main{
     display: grid;
@@ -156,6 +176,8 @@ h1{
 .col-sm-3 li{
     list-style-type: none;
     padding-inline: 2;
+    display: inline-block;
+    margin: 0%;
 }
 #feature{
     background: #6da5ca;
@@ -188,13 +210,15 @@ line-height: 15px;
 
 }
 #usluge{
-    width: 100%;
+    width: em;
     background-color: thistle;
-    font-size: 18px;
+    font-size: 25px;
+    
+   
     
 }
 .table{
-    width: 80%;
+    width: 100%;
     max-width: 100%;
     background-color: rgb(214, 148, 228);
 }
@@ -235,3 +259,55 @@ label{
   .demo:hover {
     opacity: 1;
   }
+
+#content1 p{
+    text-align: center;
+    margin: 5% 5%;
+   
+}
+#logonakraju{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#row{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#logonakraju{
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+#onama{
+    text-align: center;
+    word-break: normal;
+    grid-template-areas: initial;
+}
+#survey{
+    text-decoration:none ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+#posalji{
+    font-size: 20px;
+}
+#forma{
+    float: left;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration-color: midnightblue;
+    font-weight: bold;
+}
+#prosledi{
+    font-size: 20px;
+}
+#content6{
+    display: inline;
+  
+}
+#pocetak{
+    display: grid;
+    grid-template-columns: auto auto ;
+}
